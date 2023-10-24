@@ -1,0 +1,11 @@
+<!-- <p>hero-detail works!</p> -->
+<!-- <h1>{{ singleHeroData?.id }}</h1>
+<h1>{{ singleHeroData?.name }}</h1> -->
+<div *ngIf="singleHeroData">
+  <h1>{{ singleHeroData.id }}</h1>
+  <h1>{{ singleHeroData.name }}</h1>
+</div>
+
+<i *ngIf="singleHeroData">
+  <app-message [Message]="singleHeroData"></app-message>
+</i>

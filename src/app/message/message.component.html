@@ -1,0 +1,4 @@
+<!-- <p>message works!</p> -->
+<ul *ngIf="Messages">
+  <li *ngFor="let message of Messages">{{ message | json }}</li>
+</ul>
